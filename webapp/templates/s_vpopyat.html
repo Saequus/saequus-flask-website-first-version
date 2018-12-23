@@ -1,0 +1,80 @@
+{% extends 'layout.html' %}
+
+
+{% block bodypart %}
+<body class="page-id-3">
+{% endblock bodypart %}
+
+
+{% block breadcrumb %}
+<nav aria-label="breadcrumb">
+
+    <div class="container">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="breadcrumb-link" href="{{ url_for('home') }}">Главная</a></li>
+            <li class="breadcrumb-item"><a class="breadcrumb-link" href="{{ url_for('sbornik_ot_raskata_do_prosveta') }}">
+                Сборник «От раската до просвета»</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Впопят к минулому</li>
+        </ol>
+    </div>
+</nav>
+{% endblock breadcrumb %}
+
+{% block content %}
+<div class="container">
+    <div class="background: url('http://placehold.it/1920x1080') no-repeat center center fixed">
+      <h2 class="title">Впопят к минулому</h2>
+
+        <div class="row text-left">
+
+            <p class="ml-3">
+                Впопят к минулому, к приведшим из забвения      <br>
+                Пустым решениям, ошибкам школьных лет,          <br>
+                Я возвращаюсь с легким сожалением               <br>
+                И с облегчением я возвращаюсь в век…            <br><br>
+
+
+                …веселых радостей, печальных огорчений,         <br>
+                Суровых правил и учащих граблей,                <br>
+                И к глупости незрелых отношений,                <br>
+                И к петлям обжигающих страстей.                 <br><br>
+
+
+                Пожалуй, грустно и жестоко вспоминать.          <br>
+                И я забыть свои деяния стараюсь                 <br>
+                Но  знаю, что не буду повторять –               <br>
+                Мне опыта граблей хватило на всю жизнь, ручаюсь.<br><br>
+
+
+                Не важно, как пестры были решения               <br>
+                И как бездумно в омут окунался я,               <br>
+                Чтоб трусости не показать и невезения,          <br>
+                Сокрыть все страхи за бутылкою вина.            <br><br>
+
+
+                Я вам скажу, что пересек с желанием             <br>
+                Там много черт и нравственных границ,           <br>
+                Что подходил к проблеме с оправданием:          <br>
+                Если уж сунуть голову, то в высшую из петлиц.   <br><br>
+
+
+                Так я прожил, от неудач к везению,              <br>
+                Всю боль душевную весельем заглушал.            <br>
+                Но век прошел, и с легким сожалением,           <br>
+                И с облегчением я жить так перестал.            <br><br>
+
+
+            </p>
+
+        </div>
+        <div class="mb-4">
+            <small>Написан 28 ноября 2013 года</small>
+        </div>
+    </div>
+
+
+
+
+</div>
+
+{% endblock content %}

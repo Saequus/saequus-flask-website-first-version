@@ -1,0 +1,81 @@
+{% extends 'layout.html' %}
+
+{% block bodypart %}
+<body class="sand-gradient-background">
+{% endblock bodypart %}
+
+{% block breadcrumb %}
+<nav aria-label="breadcrumb">
+
+    <div class="container">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="breadcrumb-link" href="{{ url_for('home') }}">Главная</a></li>
+            <li class="breadcrumb-item active"><a>Для связи</a></li>
+        </ol>
+    </div>
+</nav>
+{% endblock breadcrumb %}
+
+
+{% block content %}
+<div class="container">
+
+    {% if success %}
+      <div class="success-flash"><p>Спасибо за сообщение. Мы вскоре вам ответим.</p></div>
+    {% else %}
+
+        {% for message in form.name.errors %}
+          <div class="flash">{{ message }}</div>
+        {% endfor %}
+
+        {% for message in form.email.errors %}
+          <div class="flash">{{ message }}</div>
+        {% endfor %}
+
+        {% for message in form.subject.errors %}
+          <div class="flash">{{ message }}</div>
+        {% endfor %}
+
+        {% for message in form.message.errors %}
+          <div class="flash">{{ message }}</div>
+        {% endfor %}
+
+    {% endif %}
+
+<div class="container contact-form">
+        <div class="contact-image">
+            <img src="../static/small_smoge.jpg"/>
+        </div>
+    <form action="{{ url_for('contact') }}" method=post>
+        <h2 class="text-center text-vivid-orange font-weight-bold">Связаться</h2>
+        <div class="row">
+            <div class="col-md-6">
+                {{ form.hidden_tag() }}
+
+                {{ form.name.label }}
+                {{ form.name }}
+
+                {{ form.email.label }}
+                {{ form.email }}
+
+                {{ form.subject.label }}
+                {{ form.subject }}
+
+                {{ form.submit }}
+
+            </div>
+            <div class="col-md-6">
+                {{ form.message.label }}
+                {{ form.message }}
+            </div>
+        </div>
+    </form>
+</div>
+
+
+</div>
+
+{% endblock content %}
+
+
+

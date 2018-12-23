@@ -1,0 +1,61 @@
+{% extends 'layout.html' %}
+
+{% block bodypart %}
+<body>
+{% endblock bodypart %}
+
+{% block breadcrumb %}
+<nav aria-label="breadcrumb">
+
+    <div class="container">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="breadcrumb-link" href="{{ url_for('home') }}">Главная</a></li>
+            <li class="breadcrumb-item active"><a>О сайте</a></li>
+        </ol>
+    </div>
+</nav>
+{% endblock breadcrumb %}
+
+
+{% block content %}
+<div class="content-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <h2 class="title">О сайте</h2>
+
+                <p class="mb-4">
+                    Saequus ("S" + "aequus" – от лат. равный) – Сайкус – это псевдоним, под которым Слава Специан проводит презентацию
+                    творческих работ, включая написанные много лет назад стихи,
+                    современную поэзию, рассказы, философские статьи и интеллектуальные заметки.</p>
+
+
+
+                <p class="mb-2 font-weight-bold text-muted">Всю жизнь на грабли наступаю</p>
+                <p>
+                    Всю жизнь на грабли наступаю,<br>
+                    Все в жизни делаю не так,<br>
+                    Но с каждым разом повторяю,<br>
+                    Остатки воли взяв в кулак,<br><br>
+
+                    Что не страшны эти несчастья,<br>
+                    Любой проблеме только рад –<br>
+                    Лишь проторённый путь пугает<br>
+                    Меня отсутствием преград.</p>
+
+                <small class="mb-2"><mark>Творчество должно быть доступно.</mark></small><br>
+                <small>Слава «Saequus» Специан</small>
+            </div>
+            <div class="col-sm">
+            </div>
+            <div class="col-sm">
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+{% endblock content %}
+
+
+

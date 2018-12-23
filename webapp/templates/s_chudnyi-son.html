@@ -1,0 +1,73 @@
+{% extends 'layout.html' %}
+
+{% block bodypart %}
+<body>
+{% endblock bodypart %}
+
+{% block breadcrumb %}
+<nav aria-label="breadcrumb">
+
+    <div class="container">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="breadcrumb-link" href="{{ url_for('home') }}">Главная</a></li>
+            <li class="breadcrumb-item"><a class="breadcrumb-link" href="{{ url_for('sbornik_ot_raskata_do_prosveta') }}">
+                Сборник «От раската до просвета»</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Чудный сон!</li>
+        </ol>
+    </div>
+</nav>
+{% endblock breadcrumb %}
+
+{% block content %}
+<div class="container">
+  <h2 class="title">Чудный сон!</h2>
+
+    <div class="row text-left">
+
+            <p class="ml-3">
+
+                Чудный сон! Только б мне не проснуться!<br>
+                Кожа нежная пахнет сладостью.<br>
+                Мне бы только слегка прикоснуться<br>
+                К губам твоим, наполненным мякотью.<br><br>
+
+                Я осознаю, что мы во сне,<br>
+                С тобой я понарошку вижусь,<br>
+                Но тем не менее вполне<br>
+                Согласен на такую близость.<br><br>
+
+                Ветер слегка поднимает край<br>
+                Твоего бирюзового платья.<br>
+                Из-под ситца слегка выступает<br>
+                Родинка на бледном запястье.<br><br>
+
+                Не могу твоим словам не поддаться.<br>
+                Загипнотизированный смотрю,<br>
+                Как вращаешь пряди на пальцах,<br>
+                Как плавно усыпляешь душу.<br><br>
+
+                Прекрасно-тонкие черты лица<br>
+                И робкая, смущённая улыбка –<br>
+                Это счастье не имеющее конца<br>
+                Или надо мной пошутить попытка?<br><br>
+
+                Удивительный мир забвения!<br>
+                Просыпаться никто не спешит.<br>
+                Что за чудный сон! То ли везение,<br>
+                То ли проклятие заблудшей души.<br><br>
+            </p>
+        </div>
+        <div class="mb-4">
+            <small>Написан 10 марта 2012 года</small>
+        </div>
+</div>
+
+
+{% endblock content %}
+
+
+
+
+
+
+

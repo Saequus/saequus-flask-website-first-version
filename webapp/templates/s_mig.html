@@ -1,0 +1,75 @@
+{% extends 'layout.html' %}
+
+{% block bodypart %}
+<body class="page-id-10">
+{% endblock bodypart %}
+
+{% block breadcrumb %}
+<nav aria-label="breadcrumb">
+
+    <div class="container">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="breadcrumb-link" href="{{ url_for('home') }}">Главная</a></li>
+            <li class="breadcrumb-item"><a class="breadcrumb-link" href="{{ url_for('sbornik_ot_raskata_do_prosveta') }}">
+                Сборник «От раската до просвета»</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Прекрасный миг</li>
+        </ol>
+    </div>
+</nav>
+{% endblock breadcrumb %}
+
+{% block content %}
+<div class="container">
+  <h2 class="title">Прекрасный миг</h2>
+
+    <div class="row text-left">
+
+            <p class="ml-3">
+
+                Прекрасный миг – момент создания        <br>
+                Шедевра мастером в ночи.                <br>
+                Сквозь тремор рук пера касание          <br>
+                Выводит буквы начертание                <br>
+                При слабом пламени свечи.               <br><br>
+
+                Прелестный слог, знакомый почерк        <br>
+                Известен всем со школьных лет –         <br>
+                Тот мелкий шрифт, та подпись, росчерк,  <br>
+                Страницы текста, строки точек –         <br>
+                На все вопросы есть ответ:              <br><br>
+
+                Вы относитесь к жизни проще!            <br>
+                Пусть день прожитый под дождем,         <br>
+                Под гнетом туч в холодной роще          <br>
+                Будет толчком к движению мощным –       <br>
+                Минувшим и забытым днем.                <br><br>
+
+                Безмерный холст – вся наша жизнь.       <br>
+                В ней каждый автор и художник.          <br>
+                Кто окунет в зеленый кисть,             <br>
+                Кто выльет черную как слизь...          <br>
+                ...а кто-то чирканет немножко.          <br><br>
+
+                И все мы постоянно пишем,               <br>
+                Рисуем, красим, льем на холст           <br>
+                И на холсты людей других же –           <br>
+                Преображая полотнище                    <br>
+                Людей и судеб заодно.                   <br><br>
+
+            </p>
+
+        </div>
+        <div class="mb-4">
+            <small>Написан 27 мая 2018 года</small>
+        </div>
+
+
+
+
+</div>
+
+{% endblock content %}
+
+
+
+

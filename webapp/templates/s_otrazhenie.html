@@ -1,0 +1,63 @@
+{% extends 'layout.html' %}
+
+{% block bodypart %}
+<body class="page-id-8">
+{% endblock bodypart %}
+
+
+{% block breadcrumb %}
+<nav aria-label="breadcrumb">
+
+    <div class="container">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="breadcrumb-link" href="{{ url_for('home') }}">Главная</a></li>
+            <li class="breadcrumb-item"><a class="breadcrumb-link" href="{{ url_for('sbornik_ot_raskata_do_prosveta') }}">
+                Сборник «От раската до просвета»</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Отражение невыспаных лиц</li>
+        </ol>
+    </div>
+</nav>
+{% endblock breadcrumb %}
+
+{% block content %}
+<div class="container">
+      <h2 class="title">Отражение невыспаных лиц</h2>
+
+                <p class="ml-3">
+
+                    Отражение невыспаных лиц по утрам,      <br>
+                    С торчащими копнами сена,               <br>
+                    И замазананными пастой зубной губам -   <br>
+                    Видит каждый день зеркало.              <br><br>
+
+
+                    Пылесос и портфели, санки и зонт,       <br>
+                    Материнскую тревогу,                    <br>
+                    Дни Рождения, Пасху и Новый Год –       <br>
+                    Видит зеркало снова.                    <br><br>
+
+
+                    Дорогие наряды, пласты макияжа,<br>
+                    Красоту длинною в мгновение,            <br>
+                    Эго Наполеона при внешности пажа –      <br>
+                    Видит каждый день зеркало.              <br><br>
+
+                    Потекшую тушь, синяки на руках,         <br>
+                    Пустые бутылки от водки                 <br>
+                    Детей в одних только рваных колготках - <br>
+                    Видит каждый день зеркало.              <br><br>
+
+                    Как тяжело ему просто смотреть,         <br>
+                    Не в силах помочь и исправить.          <br>
+                    Но жестокость способно оно отразить,    <br>
+                    В своём облике правду представить.      <br><br>
+                </p>
+
+            <div class="mb-5">
+                <small>Написан 23 апреля 2012 года</small>
+            </div>
+</div>
+
+
+
+{% endblock content %}

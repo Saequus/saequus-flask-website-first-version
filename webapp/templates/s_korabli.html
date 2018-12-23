@@ -1,0 +1,69 @@
+{% extends 'layout.html' %}
+
+{% block bodypart %}
+<body class="page-id-5">
+{% endblock bodypart %}
+
+{% block breadcrumb %}
+<nav aria-label="breadcrumb">
+
+    <div class="container">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="breadcrumb-link" href="{{ url_for('home') }}">Главная</a></li>
+            <li class="breadcrumb-item"><a class="breadcrumb-link" href="{{ url_for('sbornik_ot_raskata_do_prosveta') }}">
+                Сборник «От раската до просвета»</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Есть корабли</li>
+        </ol>
+    </div>
+</nav>
+{% endblock breadcrumb %}
+
+{% block content %}
+<div class="container">
+  <h2 class="title">Есть корабли</h2>
+
+    <div class="row text-left">
+
+            <p class="ml-3">
+
+                Есть корабли, что знают ветер,      <br>
+                Движением гонит их вперед.          <br>
+                Их смысл глобален, кругосветен –    <br>
+                Не останавливать свой ход.          <br><br>
+
+                Есть корабли, что знают бриз,       <br>
+                Им бухты нет роднее места.          <br>
+                Их паруса как тряпки вниз           <br>
+                Свисают дряхло, бесполезно.         <br><br>
+
+                Есть корабли, их ход замедлен.      <br>
+                Стремленья нет в них и желания.     <br>
+                Их якорь скинут, и от движения      <br>
+                Осталось лишь воспоминание.         <br><br>
+
+                Всем кораблям, что знают ветер,     <br>
+                Кричу, в надрыве голоса:            <br>
+                Не торопитесь бросить якорь,        <br>
+                И не опускайте паруса!              <br><br>
+
+            </p>
+
+        </div>
+        <div class="mb-4">
+            <small>Написан 12 ноября 2016 года</small>
+        </div>
+
+</div>
+
+{% endblock content %}
+
+
+
+
+
+
+
+
+
+
+

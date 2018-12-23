@@ -1,0 +1,62 @@
+{% extends 'layout.html' %}
+
+{% block bodypart %}
+<body>
+{% endblock bodypart %}
+
+{% block breadcrumb %}
+<nav aria-label="breadcrumb">
+
+    <div class="container">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="breadcrumb-link" href="{{ url_for('home') }}">Главная</a></li>
+            <li class="breadcrumb-item"><a class="breadcrumb-link" href="{{ url_for('sbornik_ot_raskata_do_prosveta') }}">
+                Сборник «От раската до просвета»</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Ослабло нашей страсти пламя.</li>
+        </ol>
+    </div>
+</nav>
+{% endblock breadcrumb %}
+
+{% block content %}
+<div class="container">
+  <h2 class="title">Ослабло нашей страсти пламя</h2>
+
+    <div class="row text-left">
+
+        <p class="ml-3">
+
+            Ослабло нашей страсти пламя.<br>
+            Скукожился остаток чувств.<br>
+            Усталость. Гнев. Недосыпание.<br>
+            Внезапно дом стал очень пуст.<br><br>
+
+            Прошли моменты бурных действий,<br>
+            Веселых и не очень дней.<br>
+            Пропала жажда происшествий,<br>
+            Новых открытий и идей.<br><br>
+
+            Я буду нежен так, как раньше,<br>
+            Но ты мне тоже помоги –<br>
+            Давай распалим камин спящий<br>
+            И пламя тлеющей любви.<br><br>
+
+            Давай устроим вновь свидание:<br>
+            В музей пойдем. В лес на пикник.<br>
+            Вновь окунемся в созидание<br>
+            И словим творческий порыв.<br><br>
+
+            Как ни крути, нет плода слаще,<br>
+            Чем вновь открытая любовь.<br>
+            Я буду нежен, но не раньше,<br>
+            Чем когда мне улыбнешься вновь.<br><br>
+
+        </p>
+
+        </div>
+        <div class="mb-4">
+            <small>Написан 29 августа 2018 года</small>
+        </div>
+</div>
+
+{% endblock content %}

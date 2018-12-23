@@ -1,0 +1,32 @@
+{% extends 'layout.html' %}
+
+{% block bodypart %}
+<body class="page-id-docs">
+{% endblock bodypart %}
+
+
+{% block breadcrumb %}
+<nav aria-label="breadcrumb">
+
+    <div class="container">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="breadcrumb-link" href="{{ url_for('home') }}">Главная</a></li>
+            <li class="breadcrumb-item active"><a>FAQ</a></li>
+        </ol>
+    </div>
+</nav>
+{% endblock breadcrumb %}
+
+
+{% block content %}
+<div class="container">
+
+  <h2 class="title">FAQ</h2>
+      <div class="mb-4">
+        <small>Содержимое этой страницы будет дополняться.</small>
+      </div>
+
+
+</div>
+
+{% endblock content %}

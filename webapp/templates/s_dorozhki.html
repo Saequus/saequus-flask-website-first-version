@@ -1,0 +1,51 @@
+{% extends 'layout.html' %}
+
+{% block bodypart %}
+<body>
+{% endblock bodypart %}
+
+{% block breadcrumb %}
+<nav aria-label="breadcrumb">
+
+    <div class="container">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="breadcrumb-link" href="{{ url_for('home') }}">Главная</a></li>
+            <li class="breadcrumb-item"><a class="breadcrumb-link" href="{{ url_for('sbornik_ot_raskata_do_prosveta') }}">
+                Сборник «От раската до просвета»</a></li>
+            <li class="breadcrumb-item active" aria-current="page">На асфальтовых дорожках</li>
+        </ol>
+    </div>
+</nav>
+{% endblock breadcrumb %}
+
+{% block content %}
+<div class="container">
+      <h2 class="title">На асфальтовывых дорожках</h2>
+
+        <div class="row text-left">
+
+            <p class="ml-3">
+                На асфальтовых дорожках белым мелом нарисуем            <br>
+                Черно-белых носорожков, пусть топчут берега бордюров.   <br>
+                Стоит только присмотреться – оживают носорожки!         <br>
+                Перехватывает сердце – зоопарк, а не дорожки.           <br><br>
+
+
+                На песчаных на тропинках змеек длинных нарисуем.        <br>
+                С дали выглядят так мило камешки вместо чешуек!         <br>
+                Можно подойти, потрогать – вдруг живые это змейки?      <br>
+                Только, друг, не нужно топать! Уползут же под скамейки! <br><br>
+
+
+                На стене нашего дома яркой краской нарисуем             <br>
+                Целый океан бездонный с черепахой и медузой.            <br>
+                И запустим туда рыбок – на стене у потолка              <br>
+                Пусть выпрыгивают к солнцу на ветру суша бока.          <br><br>
+            </p>
+        </div>
+      <div>
+          <small>Написан 9 сентября 2012 года</small>
+      </div>
+</div>
+
+{% endblock content %}

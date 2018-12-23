@@ -1,0 +1,64 @@
+{% extends 'layout.html' %}
+
+{% block bodypart %}
+<body class="page-id-12">
+{% endblock bodypart %}
+
+{% block breadcrumb %}
+<nav aria-label="breadcrumb">
+
+    <div class="container">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="breadcrumb-link" href="{{ url_for('home') }}">Главная</a></li>
+            <li class="breadcrumb-item"><a class="breadcrumb-link" href="{{ url_for('sbornik_ot_raskata_do_prosveta') }}">
+                Сборник «От раската до просвета»</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Посвятите хотя бы минутку</li>
+        </ol>
+    </div>
+</nav>
+{% endblock breadcrumb %}
+
+{% block content %}
+<div class="container">
+  <h2 class="title">Посвятите хотя бы минутку</h2>
+
+    <div class="row text-left">
+
+            <p class="ml-3">
+
+                Посвятите хотя бы минутку,          <br>
+                Окунитесь хоть раз с головой        <br>
+                В прохладу вечерней прогулки,       <br>
+                Под лунный свет голубой.            <br><br>
+
+                Вы опять в добровольном неведении   <br>
+                Пропускаете мимо ушей               <br>
+                Шелест бархатной зелени,            <br>
+                Ветренный свист меж камней.         <br><br>
+
+                В вихре дел очень нужных            <br>
+                Вряд ли оцените вы                  <br>
+                Мутность уличной лужи               <br>
+                И шершавость кирпичной стены.       <br><br>
+
+                Вряд ли оцените легкий              <br>
+                Танец снежинок во мгле.             <br>
+                Вам понять дано эти строки          <br>
+                Только на смертном одре.            <br>
+
+
+            </p>
+
+        </div>
+        <div class="mb-4">
+            <small>Написан 12 января 2015 года</small>
+        </div>
+
+
+</div>
+
+{% endblock content %}
+
+
+
+
